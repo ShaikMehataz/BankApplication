@@ -1,0 +1,48 @@
+create database BankProject;
+
+use BankProject;
+
+
+create table BANKACCOUNT(ACNT_ID int primary key auto_increment,ACNT_NAME varchar(30) not null, 
+ACNT_AGE int , ACNT_GENDER varchar(10),
+ACNT_BANK varchar(20),ACNT_CARDNUM int,CREDIT_LIMIT int);
+
+
+
+insert into  BANKACCOUNT values(1,'Sita',25,'f','axis',1234,10000);
+
+insert into  BANKACCOUNT values(2,'Geeta',27,'f','hdfc',4321,1000);
+
+insert into  BANKACCOUNT values(3,'Mira',26,'f','axis',3214,1500);
+
+insert into  BANKACCOUNT values(4,'Rama',25,'m','axis',2134,1000);
+
+
+
+create table BANKTRANSACTION(ACNT_CARDNUM int, ACNT_TDATE varchar(20),ACNT_AMOUNT int);
+
+
+
+insert into banktransaction values(1234,"08/11/2020",500);
+
+insert into banktransaction values(1234,"07/12/2020",1500);
+
+insert into banktransaction values(1234,"09/20/2020",1400);
+
+insert into banktransaction values(1234,"08/21/2020",1200);
+
+insert into banktransaction values(1234,"06/20/2020",700);
+
+insert into banktransaction values(2316,"10/01/2020",800);
+
+insert into banktransaction values(2316,"05/04/2020",900);
+
+insert into banktransaction values(2316,"04/10/2020",1100);
+
+insert into banktransaction values(4321,"08/11/2020",500);
+
+insert into banktransaction values(4321,"07/12/2020",1500);
+
+insert into banktransaction values(4321,"09/20/2020",1400);
+
+insert into banktransaction values(8567,"08/21/2020",1200);
